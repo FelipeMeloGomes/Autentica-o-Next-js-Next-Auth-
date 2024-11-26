@@ -85,16 +85,16 @@ Certifique-se de ter as seguintes ferramentas instaladas:
 
 ## 🖥️ Estrutura do Projeto
 
-- **`/pages/api/auth`**: Rotas da API de autenticação NextAuth.
+- **`/app/api/auth`**: Rotas da API de autenticação NextAuth.
 - **`/lib/prisma.ts`**: Configuração do cliente Prisma.
 - **`/components`**: Componentes reutilizáveis da interface.
-- **`/models`**: Schemas para o banco de dados com Prisma.
+- **`/prisma`**: Schemas para o banco de dados com Prisma.
 
 ---
 
 ## 💡 Personalização
 
-Se quiser adicionar novos provedores de autenticação, basta atualizar o arquivo `next-auth.js`:
+Se quiser adicionar novos provedores de autenticação, basta atualizar o arquivo `auth.ts`:
 
 ```javascript
 import Providers from "next-auth/providers";
